@@ -1,10 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Segitiga">
+    android:orientation="vertical"
+    tools:context=".MenuUtama"
+    android:padding="13dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LUAS SEGITIGA"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/textalas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ALAS"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"/>
+
+    <EditText
+        android:id="@+id/editalas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Masukkan Nilai Alas"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/texttinggi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TINGGI"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/edittinggi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Masukkan Nilai Tinggi"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/texthasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HASIL"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/edithasil"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_hitung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#932F2F"
+            android:text="Hitung"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/btn_hapus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hapus"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
