@@ -68,15 +68,13 @@
         android:textAlignment="center"
         android:layout_marginTop="8dp"/>
 
-    <EditText
-        android:id="@+id/edithasil"
-        android:layout_width="293dp"
+    <TextView
+        android:id="@+id/texthasilhitung"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="35dp"
-        android:layout_marginBottom="10dp"
-        android:ems="10"
-        android:inputType="number"
-        android:textSize="15sp" />
+        android:hint="Hasil Luas Segitiga"
+        android:textSize="15sp"
+        android:textAlignment="center"/>
 
     <LinearLayout
         android:layout_width="match_parent"
